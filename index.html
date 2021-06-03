@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Carousel Slide Builder</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script type="text/javascript" src="script.js"></script>
+<link rel="stylesheet" href="style.css">
+<style>
+</style>
+<script src=""></script>
+<body>
+<div class="nav-bar">
+	<h1 class="nav-header">Carousel Slide Builder</h1>
+</div>
+<div id="mobile-preview-container" class="mobile-preview-container">
+	<h2>Preview</h2>
+	<div id="mobile-preview" class="mobile-preview">
+		
+	</div>
+</div>
+<div class="generator-container">
+	<div class="slide-generator">
+		<form id="carousel-form">
+			<label for="lang">Select a Country & Language</label><br/>
+			<select id="lang">
+				<option value = "en" selected>United States</option>
+				<option value = "ca-en">Canada (EN)</option>
+				<option value = "ca-fr">Canada (FR)</option>
+				<option value = "at">Austria</option>
+				<option value = "be-fr">Belgium (FR)</option>
+				<option value = "be-nl">Belgium (NL)</option>
+				<option value = "dk">Denmark</option>
+				<option value = "fr">France</option>
+				<option value = "de">Germany</option>
+				<option value = "ie">Ireland</option>
+				<option value = "nl">Netherlands</option>
+				<option value = "pt">Portugal</option>
+				<option value = "es">Spain</option>
+				<option value = "se">Sweden</option>
+				<option value = "ch-de">Switzerland (DE)</option>
+				<option value = "ch-fr">Switzerland (FR)</option>
+				<option value = "uk">UK</option>
+			</select><br/>
+	      	<label id="desktopTitle" for="desktop">Desktop Image Sitecore Path</label><br/>
+	      	<input type="text" id="desktop"><br/>
+	      	<label id="mobileTitle" for="mobile">Mobile Image Sitecore Path</label><br/>
+	      	<input type="text" id="mobile"><br/>
+	      	<label for="cta">URL</label><br/>
+	      	<input type="text" id="cta"><br/>
+	      	<label for="alt">ALT</label><br/>
+	      	<input type="text" id="alt"><br/>
+	      	<button onclick="get_values(event)" id="btn" class="btn">Submit</button>
+	  	</form>
+	  </div>
+	  <div class="code-block">
+	  	<pre><code id="code-display">
+	  		
+	    </code></pre>
+	  </div>
+</div>
+<div id="desktop-preview-container" class="desktop-preview-container">
+	<h2>Preview</h2>
+	<div id="desktop-preview" class="desktop-preview">
+		
+	</div>
+</div>
+</body>
