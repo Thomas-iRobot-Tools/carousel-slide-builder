@@ -73,8 +73,15 @@ pre{
 }
 .desktop-preview{
     max-height: 1000px;
-    width: 100%;
-    display: block;
+    width: 75%;
+    vertical-align: top;
+    display: inline-block;
+}
+.mobile-preview-big{
+    max-height: 1071px;
+    width: 20%;
+    margin-left: 2%;
+    display: inline-block;
 }
 .mobile-preview-container{
     display: none;
@@ -93,7 +100,7 @@ span.blue{
 }
 
 /* Mobile */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1023px) {
     #carousel-form label {
     font-size: 18px;
 }
@@ -154,14 +161,17 @@ pre{
     display: none;
 }
 .mobile-preview-container{
-    max-height: 1071px;
+    /*max-height: 1071px;*/
     width: 100%;
     display: block;
 }
 .mobile-preview{
-    max-height: 1071px;
+    /*max-height: 1071px;*/
     width: 100%;
     display: block;
 }
 
+.mobile-preview-big{
+    display: none;
+}
     }
