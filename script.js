@@ -144,9 +144,11 @@
 	        			'<span class="grey">&lt;</span><span class="green">/div</span><span class="grey">&gt;</span> <br/>';
 
 	        		document.getElementById('desktop-preview').innerHTML = 
-	        		'<div class="carousel-slide"><a href="' + cta + '" tabindex="0"><picture><source media="(max-width: 1023px)" srcset="' + mobileFinal + '"> <source media="(min-width: 1024px)" srcset="' + desktopFinal + '"> <img src="' + desktopFinal + '" alt="' + alt + '" style="width: 100%;"> </picture> </a> </div> ';
+	        		'<h3>Desktop Preview</h3><br/><div class="carousel-slide"><a href="' + cta + '" tabindex="0"><picture><source media="(max-width: 1023px)" srcset="' + mobileFinal + '"> <source media="(min-width: 1024px)" srcset="' + desktopFinal + '"> <img src="' + desktopFinal + '" alt="' + alt + '" style="width: 100%;"> </picture> </a> </div> ';
 	        		document.getElementById('mobile-preview').innerHTML =
 	        		'<div class="carousel-slide"><a href="' + cta + '" tabindex="0"><picture><source media="(max-width: 1023px)" srcset="' + mobileFinal + '"> <source media="(min-width: 1024px)" srcset="' + desktopFinal + '"> <img src="' + desktopFinal + '" alt="' + alt + '" style="width: 100%;"> </picture> </a> </div> ';
+	        		document.getElementById('mobile-preview-big').innerHTML =
+	        		'<h3>Mobile Preview</h3><br/><div class="carousel-slide"><a href="' + cta + '" tabindex="0"><picture><source media="(max-width: 1023px)" srcset="' + mobileFinal + '"> <source media="(min-width: 1024px)" srcset="' + mobileFinal + '"> <img src="' + mobileFinal + '" alt="' + alt + '" style="width: 100%;"> </picture> </a> </div> ';
 
 
 	    			console.log('Desktop:', desktopFinal)
